@@ -327,8 +327,8 @@ class HPV_Gamee:
                     # Получение кол-ва доступных игр и запуск их прохождения
                     Get_Plays = self.Get_Plays()
                     if Get_Plays > 0:
-                        self.Logging('Success', self.Name, '🎮', f'Игр доступно: {Get_Spins}!')
-                        for _ in range(Get_Spins):
+                        self.Logging('Success', self.Name, '🎮', f'Игр доступно: {Get_Plays}!')
+                        for _ in range(Get_Plays):
                             self.Play()
                             sleep(randint(12, 23))
 
